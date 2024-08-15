@@ -29,13 +29,18 @@ class LoginPage extends StatelessWidget {
               SizedBox(
                 height: 15,
               ),
-              TextField(
-                decoration: InputDecoration(
-                    enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.white)),
-                    focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                            color: Color.fromARGB(255, 175, 175, 175)))),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 25.0),
+                child: TextField(
+                  decoration: InputDecoration(
+                      enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white)),
+                      focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(
+                              color: Color.fromRGBO(189, 189, 189, 1))),
+                      fillColor: Color.fromRGBO(238, 238, 238, 1),
+                      filled: true),
+                ),
               )
             ],
           ),
